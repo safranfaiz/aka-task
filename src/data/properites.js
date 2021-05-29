@@ -17,4 +17,16 @@ export const shipCountry = [
   "Switzerland",
   "United Kingdom",
   "United State"
+];
+
+export const language = [
+  "Dansk",
+  "Deutsch",
+  "English",
+  "Espanol",
+  "Francais",
+  "Italiano",
+  "Nederlands",
+  "Portugues",
+  "Svensk"
 ]
