@@ -1,0 +1,20 @@
+export const shipCountry = [
+  "Australia",
+  "Belgium",
+  "Brazil",
+  "Canada",
+  "Denmark",
+  "France",
+  "Germany",
+  "Hong Kong",
+  "Ireland",
+  "Italy",
+  "Monaco",
+  "Netherlands",
+  "Singapore",
+  "Spain",
+  "Sweden",
+  "Switzerland",
+  "United Kingdom",
+  "United State"
+]
