@@ -1,5 +1,3 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-
 export const cssHeader = {
   headerImg: {
     width: "120px",
@@ -21,6 +19,15 @@ export const cssHeader = {
   heraderIcon: {
     maxWidth: "25px",
     marginRight: "5px"
+  },
+  navIcon: {
+    width: "16px"
+  },
+  navBarBottomShadow: {
+    boxShadow: "0px 10px 5px 0px #888888"
+  },
+  tabelTitle: {
+    fontWeight: "bold",
+    cursor: "pointer"
   }
-
 }
