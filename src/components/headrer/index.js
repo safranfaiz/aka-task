@@ -2,6 +2,7 @@ import React from 'react'
 import SearchBox from './searchBox'
 import Options from './Option'
 import Navigation from './Navigation'
+import { cssHeader } from '../css/header'
 
 class Header extends React.Component{
   constructor(){
@@ -21,7 +22,10 @@ class Header extends React.Component{
           </div>       
         </div>
         <div className="row">
-          <Navigation />
+          <div className="col"><Navigation /></div>
+        </div>
+        <div className="row">
+          <h2 style={cssHeader.text.bannerFont}>Showing 26541 wines between €7 - €30 rated above 3.5 stars</h2>
         </div>
       </div>
     )
