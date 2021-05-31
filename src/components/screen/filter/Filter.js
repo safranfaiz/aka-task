@@ -5,12 +5,15 @@ import Regions from './Regions'
 import Country from './Country'
 import WineStyle from './WineStyle'
 import FoodPairings from './FoodPairings'
+import PriceRange from './PriceRange';
+import UserRating from './UserRating'
 
 class Filter extends React.Component{
   constructor(props){
     super(props)
     this.state = {
       typeData: this.props.filterData.type,
+      priceRangeData: this.props.filterData.priceRange,
       grapesData: this.props.filterData.grapes,
       regionData: this.props.filterData.regions,
       countryData: this.props.filterData.countries,
@@ -18,6 +21,7 @@ class Filter extends React.Component{
       foodPairingData: this.props.filterData.foodPairing
     }
     console.log("Filter >> ", props)
+
   }
 
   render(){
@@ -29,6 +33,20 @@ class Filter extends React.Component{
               title="Wine Types" 
               typeData={this.state.typeData}
               infor="Select Multiple" />
+          </div>
+        </div>
+        {/* <div className="row">
+          <div className="col">
+            <PriceRange 
+               title="Price Range"
+               priceRangeData={this.state.priceRangeData} />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col">
+            <UserRating 
+               title="Vivino User Rating"
+               priceRangeData={this.state.priceRangeData} />
           </div>
         </div>
         <div className="row">
@@ -65,7 +83,8 @@ class Filter extends React.Component{
                title="Food pairings"
                foodPairingData={this.state.foodPairingData} />
           </div>
-        </div>
+        </div> */}
+        
       </div>
     )
   }

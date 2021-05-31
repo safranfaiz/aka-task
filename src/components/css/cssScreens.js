@@ -37,5 +37,18 @@ export const cssScreen = {
     grapesTop: {
       marginTop: "10px"
     }
+  },
+  priceRange: {
+    priceValue: {
+      display: "flex"
+    },
+    valueSeparator: {
+      marginRight : "80%"
+    }
+  },
+  userRating: {
+    radioMarginRight:{
+      marginRight: "2%"
+    }
   }
 }

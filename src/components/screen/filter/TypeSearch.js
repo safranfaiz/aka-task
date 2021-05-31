@@ -7,7 +7,6 @@ class TypeSearch extends React.Component{
     this.state = {
       types: props.typeData
     }
-    console.log("TypeSearch >> ", props)
   }
 
   render(){
