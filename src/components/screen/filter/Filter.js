@@ -35,7 +35,7 @@ class Filter extends React.Component{
               infor="Select Multiple" />
           </div>
         </div>
-        {/* <div className="row">
+        <div className="row">
           <div className="col">
             <PriceRange 
                title="Price Range"
@@ -83,7 +83,7 @@ class Filter extends React.Component{
                title="Food pairings"
                foodPairingData={this.state.foodPairingData} />
           </div>
-        </div> */}
+        </div>
         
       </div>
     )
