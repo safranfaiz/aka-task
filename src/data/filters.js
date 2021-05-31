@@ -5,24 +5,20 @@ export const PRICE_RANGE = {
 };
 export const USER_RATING = [
   {
-    title: "Any Rating",
-    point: 0
-  },
-  {
-    title: "Average",
-    point: 3.0
-  },
-  {
-    title: "Good stuff",
-    point: 3.5
+    title: "Rare & extraordinary",
+    point: 4.5
   },
   {
     title: "Very good stuff",
     point: 4.0
   },
   {
-    title: "Rare & extraordinary",
-    point: 4.5
+    title: "Good stuff",
+    point: 3.5
+  },
+  {
+    title: "Average",
+    point: 3.0
   }
 ];
 export const GRAPES = ["Cabernet Franc", "Cabernet Sauvignon", "Chardonnay", "Grenache", "Malbec", "Merlot", "Pinot Noir", "Riesling", "Sauvignon Blanc", "Shiraz/Syrah"]

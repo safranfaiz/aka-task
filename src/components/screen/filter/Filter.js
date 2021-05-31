@@ -14,6 +14,7 @@ class Filter extends React.Component{
     this.state = {
       typeData: this.props.filterData.type,
       priceRangeData: this.props.filterData.priceRange,
+      userRatingData: this.props.filterData.userRating,
       grapesData: this.props.filterData.grapes,
       regionData: this.props.filterData.regions,
       countryData: this.props.filterData.countries,
@@ -46,7 +47,7 @@ class Filter extends React.Component{
           <div className="col">
             <UserRating 
                title="Vivino User Rating"
-               priceRangeData={this.state.priceRangeData} />
+               userRatingData={this.state.userRatingData} />
           </div>
         </div>
         <div className="row">
