@@ -1,7 +1,9 @@
 import React from 'react';
 import Header from '../components/headrer';
 import Screen from '../components/screen';
-import { TYPES, PRICE_RANGE, USER_RATING, GRAPES, RGIONS, COUNTRIES, WINE_STYLES, FOOD_PAIRING } from '../data/filters'
+import { TYPES, PRICE_RANGE, USER_RATING, GRAPES, RGIONS, COUNTRIES, WINE_STYLES, FOOD_PAIRING } from '../data/filters';
+import { productData } from '../data/product'
+
 
 class AkaSoft extends React.Component{
   constructor(props){
@@ -14,7 +16,8 @@ class AkaSoft extends React.Component{
       regions: RGIONS,
       countries: COUNTRIES,
       wineStyle: WINE_STYLES,
-      foodPairing: FOOD_PAIRING
+      foodPairing: FOOD_PAIRING,
+      productData: productData
     }
   }
 
@@ -31,6 +34,7 @@ class AkaSoft extends React.Component{
           countries={this.state.countries}
           wineStyle={this.state.wineStyle}
           foodPairing={this.state.foodPairing}
+          productData={this.state.productData}
           />
       </>
     )

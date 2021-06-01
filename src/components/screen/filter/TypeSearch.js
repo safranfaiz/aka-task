@@ -15,7 +15,7 @@ class TypeSearch extends React.Component{
         <div>
           <div style={ cssScreen.typeFilter}>
             <p style={ cssScreen.typeFilter.wineTypePadding }>{ this.props.title }</p>
-            <p>{ this.props.infor }</p>
+            <p className="infor-font-size">{ this.props.infor }</p>
           </div>
           <div className="row">
             {this.state.types.map(item => {

@@ -1,0 +1,76 @@
+.start-gap li {
+    margin-right: 2px;
+}
+
+.bottle-image-gap {
+    margin-right: 9px;
+}
+
+.price {
+    margin-top: -18%;
+    margin-left: 67%;
+}
+
+.infor-font-size {
+    font-size: 12px;
+}
+
+.star-text-gap {
+    margin-right: 6px;
+}
+
+.point-gap {
+    margin-right: 4px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.rating-font-size {
+    font-size: 13px;
+}
+
+.user-rating-radio input[type=radio]:checked {
+    background: red;
+}
+
+.rs-slider-progress-bar {
+    position: absolute;
+    height: 6px;
+    border-radius: 3px 0 0 3px;
+    background-color: #ff3447;
+}
+
+.rs-slider-progress-bar:hover {
+    cursor: grab;
+}
+
+.user-rating {
+    margin-left: 58%;
+    margin-top: -43%;
+}
+
+.user-rating-text-point {
+    color: #a26f01;
+    background-color: #f9f7d6;
+    border-radius: 40%;
+    padding: 4px;
+}
+
+.user-rating-text {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.usesr-rating-for-product:hover {
+    background-color: wheat;
+    padding: 8px;
+}
+
+.usesr-rating-for-product {
+    padding: 8px;
+}
+
+.usesr-rating-by-text {
+    background-color: rgb(242 236 226 / 0.5%);
+    padding: 8px;
+}

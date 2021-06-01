@@ -15,21 +15,22 @@ const UserRating = props => {
 
           {props.userRatingData.map(item => {
             return (
-              <div>
-                <input style={cssScreen.userRating.radioMarginRight}  type="radio" name="rating" />
-                <Rate defaultValue={item.point} 
+              <div className="user-rating-radio">
+                <input className="" style={cssScreen.userRating.radioMarginRight}  type="radio" name="rating" />
+                <Rate className="start-gap star-text-gap" defaultValue={item.point} 
                   allowHalf
                   color="red"
                   max="5"
-                  size="xs"
+                  size="xxs"
                   readOnly />
-                <label class="form-check-label" for="inlineRadio1">{item.title}</label>
+                <label class="form-check-label point-gap" >{item.point.toFixed(1)}</label>
+                <label class="form-check-label rating-font-size" >{item.title}</label>
               </div>
             )
           })}
           <div>
             <input style={{backgroundColor: 'red ', marginRight: "2%" }}  type="radio" name="rating" />
-            <label class="form-check-label" for="inlineRadio1">Any rating</label>
+            <label>Any rating</label>
           </div>         
         </div>
       </div>
