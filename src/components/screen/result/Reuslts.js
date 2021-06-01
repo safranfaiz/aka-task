@@ -43,6 +43,13 @@ class Results extends React.Component{
               readOnly />
               {userRating.point.toFixed(1)}
           </span> <span className="user-rating-text">{userRating.description}</span> </p> 
+          <div className="user-rateing-details">
+            <img className="user-img" src={userRating.img}/>
+            <div>
+              <p className="user-name">{userRating.userName}</p>
+              <p className="user-rate-post-date">{userRating.postDate}</p>
+            </div>
+          </div>
         </div>
       )
     }
