@@ -186,6 +186,7 @@
 .social-link-section {
     display: flex;
     margin-top: 5px;
+    height: 93px;
 }
 
 .social-link {
@@ -197,7 +198,7 @@
 }
 
 .footer-link-text {
-    margin-right: 12px;
+    margin-right: 20px;
     font-size: 12px;
 }
 
@@ -207,4 +208,8 @@
 
 .footer-logo {
     width: 20px;
+}
+
+.footer-link-text:hover {
+    cursor: pointer;
 }
