@@ -17,8 +17,8 @@ class Header extends React.Component{
           <div className="col">
             <SearchBox/>
           </div> 
-          <div className="col"></div>
-          <div className="col">
+          {/* <div className="col" ></div> */}
+          <div className="col" >
             <Options/>
           </div>       
         </div>

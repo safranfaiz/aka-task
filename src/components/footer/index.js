@@ -1,4 +1,5 @@
 import React from 'react';
+import googlePlay from '../../assets/googlePlay.png'
 
 const Footer = props =>{
 

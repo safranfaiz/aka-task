@@ -17,7 +17,9 @@ export const cssHeader = {
     marginTop: "12px",
     outerWidth: {
       width: "53%",
-      marginLeft: "11%"
+      marginLeft: "11%",
+      position: "fixed",
+      zIndex: "999999999"
     }
   },
   heraderIcon: {
@@ -68,6 +70,9 @@ export const cssHeader = {
       marginTop: "4%",
       marginLeft: "12%"
     }
+  },
+  logoSearchBox: {
+    width: "62%"
   }
 
 }

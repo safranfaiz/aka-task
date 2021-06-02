@@ -13,7 +13,7 @@ class SearchBox extends React.Component{
   render(){
     return (
       <>
-        <div className="form-group row">
+        <div className="form-group row" style={cssHeader.logoSearchBox}>
           <img
             src={logo}
             className="img-rounded col-4"

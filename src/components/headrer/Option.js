@@ -34,11 +34,11 @@ class Options extends React.Component{
 
   render(){
     return(
-      <>
+      <div className="container">
         <div className="row">
           <div className="col">
 
-            <DropDownList 
+            {/* <DropDownList 
               labelName="Ship to"
               loadData={this.getConutry}
               data={this.state.countryList}
@@ -50,14 +50,14 @@ class Options extends React.Component{
               loadData={this.getLanguage}
               data={this.state.languageList}
               visiblePopup={this.state.languageClick}
-              hidePopup={this.hidePopup} />
+              hidePopup={this.hidePopup} /> */}
             
             <img style={cssHeader.heraderIcon} src={user}/>
             <img style={cssHeader.heraderIcon} src={cart}/>
 
           </div>
         </div>
-      </>
+      </div>
     )
   }
 }

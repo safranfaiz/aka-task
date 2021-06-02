@@ -1,5 +1,6 @@
 import React from 'react'
 import { cssHeader } from '../../css/header'
+import '../../css/common.css'
 
 const NavigationTable = props => {
 
@@ -7,9 +8,9 @@ const NavigationTable = props => {
 
   return(
     <table>
-      <thead style={cssHeader.tabelTitle}> {title} </thead>
+      <thead className="nav-items" style={cssHeader.tabelTitle}> {title} </thead>
       {rowData.map(item =>{
-        return <tr >{item}</tr>
+        return <tr className="nav-items">{item}</tr>
       })}
     </table>
   )

@@ -151,7 +151,7 @@ class Navigation extends React.Component{
                 <div className="col">
                   <table>
                     {Details.TITLES_COMMON.map(item => {
-                      return <thead style={cssHeader.tabelTitle}>{item}</thead>
+                      return <thead className="nav-items" style={cssHeader.tabelTitle}>{item}</thead>
                     })}
                   </table>
                 </div>
@@ -161,7 +161,7 @@ class Navigation extends React.Component{
                   <p style={ cssHeader.marginTopForNavSubImg }> 
                     <div className="row">
                       <img className="col-sm-4" src={ wine } style={ cssHeader.marginTopForNavSubImg.img } />
-                      <p className="col"> { Details.WINE_DETAILS_BOTTOM[0].title } </p> 
+                      <p className="col nav-items"> { Details.WINE_DETAILS_BOTTOM[0].title } </p> 
                     </div>
                   </p>
                 </div>
@@ -169,12 +169,12 @@ class Navigation extends React.Component{
                   <p style={ cssHeader.marginTopForNavSubImg }> 
                     <div className="row">
                       <img className="col-sm-4" src={ wine } style={ cssHeader.marginTopForNavSubImg.img } />
-                      <p className="col"> { Details.WINE_DETAILS_BOTTOM[1].title } </p> 
+                      <p className="col nav-items"> { Details.WINE_DETAILS_BOTTOM[1].title } </p> 
                     </div>
                   </p>
                 </div>
               </div>
-              <p style={cssHeader.tabelTitle.links}>Browse all wines</p>
+              <p className="nav-items" style={cssHeader.tabelTitle.links}>Browse all wines</p>
 
             </div>
           )}
@@ -202,7 +202,7 @@ class Navigation extends React.Component{
                     <p style={ cssHeader.marginTopForNavSubImg }> 
                       <div className="row">
                         <img className="col-sm-4" src={ wine } style={ cssHeader.marginTopForNavSubImg.img } />
-                        <p className="col"> { Details.OFFER_DETAILS_BOTTOM[0] } </p> 
+                        <p className="col nav-items"> { Details.OFFER_DETAILS_BOTTOM[0] } </p> 
                       </div>
                     </p>
                   </div>
@@ -210,12 +210,12 @@ class Navigation extends React.Component{
                     <p style={ cssHeader.marginTopForNavSubImg }> 
                       <div className="row">
                         <img className="col-sm-4" src={ wine } style={ cssHeader.marginTopForNavSubImg.img } />
-                        <p className="col"> { Details.OFFER_DETAILS_BOTTOM[1] } </p> 
+                        <p className="col nav-items"> { Details.OFFER_DETAILS_BOTTOM[1] } </p> 
                       </div>
                     </p>
                   </div>
                 </div>
-                <p style={cssHeader.tabelTitle.links}>All Offers</p>
+                <p className="nav-items" style={cssHeader.tabelTitle.links}>All Offers</p>
               </div>
             )
           }
@@ -245,7 +245,7 @@ class Navigation extends React.Component{
                   <p style={ cssHeader.marginTopForNavSubImg }> 
                     <div className="row">
                       <img className="col-sm-4" src={ wine } style={ cssHeader.marginTopForNavSubImg.img } />
-                      <p className="col"> { Details.PAIRINGS[3].details[0].title } </p> 
+                      <p className="col nav-items"> { Details.PAIRINGS[3].details[0].title } </p> 
                     </div>
                   </p>
                 </div>
@@ -253,7 +253,7 @@ class Navigation extends React.Component{
                   <p style={ cssHeader.marginTopForNavSubImg }> 
                     <div className="row">
                       <img className="col-sm-4" src={ wine } style={ cssHeader.marginTopForNavSubImg.img } />
-                      <p className="col"> { Details.PAIRINGS[3].details[1].title } </p> 
+                      <p className="col nav-items"> { Details.PAIRINGS[3].details[1].title } </p> 
                     </div>
                   </p>
                 </div>
@@ -286,7 +286,7 @@ class Navigation extends React.Component{
                   <p style={ cssHeader.marginTopForNavSubImg }> 
                     <div className="row">
                       <img className="col-sm-4" src={ wine } style={ cssHeader.marginTopForNavSubImg.img } />
-                      <p className="col"> { Details.GRAPES[3].details[0].title } </p> 
+                      <p className="col nav-items"> { Details.GRAPES[3].details[0].title } </p> 
                     </div>
                   </p>
                 </div>
@@ -294,7 +294,7 @@ class Navigation extends React.Component{
                   <p style={ cssHeader.marginTopForNavSubImg }> 
                     <div className="row">
                       <img className="col-sm-4" src={ wine } style={ cssHeader.marginTopForNavSubImg.img } />
-                      <p className="col"> { Details.GRAPES[3].details[1].title } </p> 
+                      <p className="col nav-items"> { Details.GRAPES[3].details[1].title } </p> 
                     </div>
                   </p>
                 </div>
@@ -324,7 +324,7 @@ class Navigation extends React.Component{
                 <div className="col">
                   <table>
                     {Details.REGIONS[3].titleCommon.map(item => {
-                      return <thead style={cssHeader.tabelTitle}>{item}</thead>
+                      return <thead className="nav-items" style={cssHeader.tabelTitle}>{item}</thead>
                     })}
                   </table>
                 </div>
@@ -334,7 +334,7 @@ class Navigation extends React.Component{
                   <p style={ cssHeader.marginTopForNavSubImg }>
                     <div className="row">
                       <img className="col-sm-4" src={ wine } style={ cssHeader.marginTopForNavSubImg.img } />
-                      <p className="col"> { Details.REGIONS[3].details[0].title } </p> 
+                      <p className="col nav-items"> { Details.REGIONS[3].details[0].title } </p> 
                     </div> 
                   </p>
                 </div>
@@ -342,7 +342,7 @@ class Navigation extends React.Component{
                   <p style={ cssHeader.marginTopForNavSubImg }> 
                     <div className="row">
                       <img className="col-sm-4" src={ wine } style={ cssHeader.marginTopForNavSubImg.img } />
-                      <p className="col"> { Details.REGIONS[3].details[1].title } </p> 
+                      <p className="col nav-items"> { Details.REGIONS[3].details[1].title } </p> 
                     </div>
                   </p>
                 </div>
