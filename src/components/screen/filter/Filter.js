@@ -27,7 +27,7 @@ class Filter extends React.Component{
 
   render(){
     return(
-      <div>
+      <div className="filter-cards">
         <div className="row">
           <div className="col">
             <TypeSearch 
@@ -85,7 +85,6 @@ class Filter extends React.Component{
                foodPairingData={this.state.foodPairingData} />
           </div>
         </div>
-        
       </div>
     )
   }

@@ -16,7 +16,8 @@ export const cssHeader = {
     padding: "20px",
     marginTop: "12px",
     outerWidth: {
-      width: "73%"
+      width: "53%",
+      marginLeft: "11%"
     }
   },
   heraderIcon: {
@@ -38,12 +39,12 @@ export const cssHeader = {
     }
   },
   marginRightForOptionSelect: {
-    marginRight: "10px",
+    marginRight: "27px",
     cursor: "pointer",
     textDecoration: "underline"
   },
   marginRightForOptionUnselect: {
-    marginRight: "10px",
+    marginRight: "27px",
     cursor: "pointer",
     textDecoration: "none"
   },
@@ -64,7 +65,8 @@ export const cssHeader = {
   text:{
     bannerFont: {
       fontSize: "25px",
-      marginTop: "4%"
+      marginTop: "4%",
+      marginLeft: "12%"
     }
   }
 

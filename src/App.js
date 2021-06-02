@@ -3,7 +3,7 @@ import AkaSoft from './components/AkaSoft'
 
 function App() {
   return (
-    <div className="container">
+    <div className="">
       <AkaSoft/>
     </div>
   );

@@ -5,7 +5,7 @@ import Results from './result/Reuslts'
 const Screen = props => {
   // console.log(props)
   return(
-    <div>
+    <div className="screen-page">
       <div className="row">
         {/* filters section */}
         <div className="col-sm-4">

@@ -3,6 +3,7 @@ import SearchBox from './searchBox'
 import Options from './Option'
 import Navigation from './Navigation'
 import { cssHeader } from '../css/header'
+import '../css/common.css'
 
 class Header extends React.Component{
   constructor(){
@@ -11,8 +12,8 @@ class Header extends React.Component{
 
   render(){
     return(
-      <div>
-        <div className="row">
+      <div className="">
+        <div className="row top-header-1">
           <div className="col">
             <SearchBox/>
           </div> 
@@ -24,7 +25,7 @@ class Header extends React.Component{
         <div className="row">
           <div className="col"><Navigation /></div>
         </div>
-        <div className="row">
+        <div className="title-text">
           <h2 style={cssHeader.text.bannerFont}>Showing 26541 wines between €7 - €30 rated above 3.5 stars</h2>
         </div>
       </div>

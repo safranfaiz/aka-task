@@ -3,6 +3,8 @@ import Header from '../components/headrer';
 import Screen from '../components/screen';
 import { TYPES, PRICE_RANGE, USER_RATING, GRAPES, RGIONS, COUNTRIES, WINE_STYLES, FOOD_PAIRING } from '../data/filters';
 import { productData } from '../data/product'
+import Footer from './footer'
+import { FOOTER } from '../data/footer'
 
 
 class AkaSoft extends React.Component{
@@ -17,7 +19,8 @@ class AkaSoft extends React.Component{
       countries: COUNTRIES,
       wineStyle: WINE_STYLES,
       foodPairing: FOOD_PAIRING,
-      productData: productData
+      productData: productData,
+      footerData: FOOTER
     }
   }
 
@@ -36,6 +39,7 @@ class AkaSoft extends React.Component{
           foodPairing={this.state.foodPairing}
           productData={this.state.productData}
           />
+          <Footer data={this.state.footerData}/>
       </>
     )
   }

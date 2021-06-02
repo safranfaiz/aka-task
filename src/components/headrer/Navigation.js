@@ -9,6 +9,7 @@ import pairings from '../../assets/pairings.svg';
 import grapes from '../../assets/grapes.svg';
 import regions from '../../assets/regions.svg';
 import wine from '../../assets/wine.jpg'
+import '../css/common.css'
 
 
 class Navigation extends React.Component{
@@ -88,9 +89,9 @@ class Navigation extends React.Component{
       <div>
         <div style={cssHeader.navBarBottomShadow} className="row" >
           <div className="col-sm-7">
-            <div className="row">
+            <div className="row navigation-links">
 
-              <div className="col-sm"> 
+              <div className=""> 
                 <Topic onMouseEnter={this.mouseHoverWine} 
                   name="Wine" 
                   image={wineGlass}
@@ -98,7 +99,7 @@ class Navigation extends React.Component{
 
               </div>
 
-              <div className="col-sm">
+              <div className="">
                 <Topic onMouseEnter={this.mouseHoverOffer} 
                   name="Offers" 
                   image={offer}
@@ -106,21 +107,21 @@ class Navigation extends React.Component{
               
               </div>
 
-              <div className="col-sm"> 
+              <div className=""> 
                 <Topic onMouseEnter={this.mouseHoverPairings} 
                   name="Pairings" 
                   image={pairings}
                   onHover={this.state.pairings}/> 
               </div>
 
-              <div className="col-sm"> 
+              <div className=""> 
                 <Topic onMouseEnter={this.mouseHoverGrapes} 
                   name="Grapes" 
                   image={grapes}
                   onHover={this.state.grapes}/> 
               </div>
 
-              <div className="col-sm"> 
+              <div className=""> 
                 <Topic onMouseEnter={this.mouseHoverRegions} 
                   name="Regions" 
                   image={regions}
@@ -129,7 +130,7 @@ class Navigation extends React.Component{
 
             </div>
           </div>
-          <div className="col-5"></div>
+          {/* <div className="col-5"></div> */}
         </div>
 
         <div style={cssHeader.popupBox.outerWidth} onMouseLeave={this.hidePopup}>
