@@ -1,9 +1,12 @@
 import React from 'react';
-import DropDownList from './option/DropDownList'
 import { shipCountry, language } from '../../data/properites';
 import user from '../../assets/user.svg'
 import cart from '../../assets/cart.svg'
 import { cssHeader } from '../css/header'
+import { Dropdown } from 'react-dropdown-now';
+import '../css/common.css'
+import 'react-dropdown-now/style.css';
+
 
 class Options extends React.Component{
 
@@ -12,8 +15,8 @@ class Options extends React.Component{
     this.state = {
       selectCountry: '',
       selectLanguage: '',
-      countryList: [],
-      languageList: [],
+      countryList: shipCountry,
+      languageList: language,
       countryClick: false,
       languageClick: false
     }
@@ -29,6 +32,7 @@ class Options extends React.Component{
 
   getLanguage = () => {
     this.setState({ languageClick: !this.state.languageClick, languageList: language })
+
   }
 
 
@@ -36,22 +40,22 @@ class Options extends React.Component{
     return(
       <div className="container">
         <div className="row">
-          <div className="col">
+          <div className="col" style={{display: "flex"}}>
 
-            {/* <DropDownList 
-              labelName="Ship to"
-              loadData={this.getConutry}
-              data={this.state.countryList}
-              visiblePopup={this.state.countryClick}
-              hidePopup={this.hidePopup} />
+          <div style={{  display: "flex", width: "45%" }}>
+            <Dropdown
+              placeholder="Ship to"
+              options={this.state.countryList}
+              value="one"
+            />
+            <Dropdown
+              placeholder="Language"
+              options={this.state.languageList}
+              value="one"
+              className="languarge-dropdown"
+            />
+          </div>
 
-            <DropDownList 
-              labelName="Language"
-              loadData={this.getLanguage}
-              data={this.state.languageList}
-              visiblePopup={this.state.languageClick}
-              hidePopup={this.hidePopup} /> */}
-            
             <img style={cssHeader.heraderIcon} src={user}/>
             <img style={cssHeader.heraderIcon} src={cart}/>
 

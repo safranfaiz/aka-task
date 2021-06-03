@@ -116,8 +116,8 @@
 }
 
 .screen-page {
-    width: 76%;
-    margin-left: 13%;
+    width: 85%;
+    margin-left: 8%;
 }
 
 .navigation-links {
@@ -217,4 +217,46 @@
 .nav-items:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+.dropdown-menu2>.dropdown-menu {
+    background-color: white !important;
+    width: 30% !important;
+    padding: 3% !important;
+    font-size: 13px !important;
+    position: absolute !important;
+    z-index: 99999999 !important;
+}
+
+.rdn-control {
+    /* width: 22%; */
+    border: 0px solid #ccc !important;
+    color: #a5a5a5 !important;
+    cursor: pointer !important;
+    font-size: smaller;
+    display: flex !important;
+}
+
+.rdn-control:hover {
+    box-shadow: 0 0px 0 rgb(0 0 0 / 6%) !important;
+}
+
+.rdn-drop {
+    overflow-y: revert !important;
+    margin-top: 4px !important;
+    max-height: 55em !important;
+    width: 151% !important;
+    border: 0px solid #ccc !important;
+    box-shadow: 0 1px 18px 4px rgb(0 0 0 / 6%) !important;
+}
+
+.rdn-drop-menu-option {
+    font-size: small;
+    padding: 6px 15px !important;
+}
+
+.rdn-drop-menu-option:hover {
+    background-color: transparent !important;
+    color: red !important;
+    text-decoration: underline;
 }

@@ -73,6 +73,13 @@ export const cssHeader = {
   },
   logoSearchBox: {
     width: "62%"
-  }
+  },
+  searchBox: { // To change search box element look
+    border: "none",
+    fontSize: "10px",
+    minHeight: "50px",
+    color: "Black"
+    }
+
 
 }
